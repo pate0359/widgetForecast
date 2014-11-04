@@ -1,0 +1,73 @@
+<div class="background-image">
+	<ul id="myaccordian">
+		<li class="day_panel">
+			<div class="top">
+				<div class="day_name">Today</div>
+				<div class="day_icon"><img alt="icon"></div>
+				<div class="day_text_wrapper">
+					<p class="day_text">weather details</p>
+				</div>
+			</div>
+			<div class="temp_panel">
+			</div>
+			<div class="panel">
+				<div class="sundirection_highlow">
+					<div class="highlow">
+						<div class="high">
+							<span class="title">Feels like</span>
+							<span class="value">00</span>
+						</div>
+						<div class="low">
+							<span class="title">Humidity</span>
+							<span class="value">00</span>
+						</div>
+					</div>
+					<div class="sundirection">
+						<div class="sunrise">
+							<span class="title">Visibility</span>
+							<span class="value">00</span>
+						</div>
+						<div class="sunset">
+							<span class="title">Wind Speed</span>
+							<span class="value">00</span>
+						</div>
+					</div>
+				</div>
+				<div class="moredetails">
+					<div class="highlow">
+						<div class="high">
+							<span class="title">dewPoint</span>
+							<span class="value">00</span>
+						</div>
+						<div class="low">
+							<span class="title">Pressure</span>
+							<span class="value">00</span>
+						</div>
+					</div>
+					<div class="sundirection">
+						<div class="sunrise">
+							<span class="title">Ozone</span>
+							<span class="value">00</span>
+						</div>
+						<div class="sunset">
+							<span class="title">Precipitation</span>
+							<span class="value">00</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<script type="text/javascript" language="javascript">
+	//	$("#myaccordian").accordion();
+	for (var i = 0; i < 12; i++) {
+		$(".temp_panel").append('<div id="'+i+'" class=\"hour\"><span class=\"hourText\"></span><span class=\"tempText\"></span>');
+	}
+	$(".temp_panel").append('<div class="horizontalborder"></div>');
+	for (var i = 12; i < 24; i++) {
+		$(".temp_panel").append('<div id="'+i+'" class=\"hour\"><span class=\"hourText\"></span><span class=\"tempText\"></span></div>');
+	}
+</script>
+
+
